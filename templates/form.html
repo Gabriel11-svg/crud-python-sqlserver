@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+
+<form method="POST">
+
+    <label>Nombre:</label>
+    <input type="text" name="nombre" value="{{ estudiante.nombre if estudiante else '' }}" required>
+
+    <label>Apellido:</label>
+    <input type="text" name="apellido" value="{{ estudiante.apellido if estudiante else '' }}" required>
+
+    <label>Correo:</label>
+    <input type="email" name="correo" value="{{ estudiante.correo if estudiante else '' }}">
+
+    <label>Teléfono:</label>
+    <input type="text" name="telefono" value="{{ estudiante.telefono if estudiante else '' }}">
+
+    <button type="submit">Guardar</button>
+</form>
+
+{% endblock %}
