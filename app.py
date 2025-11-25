@@ -46,6 +46,7 @@ def listar():
 # ------------------------------------------
 @app.route("/crear", methods=["GET", "POST"])
 def crear():
+     # Cambio pequeño para habilitar PR en feature/create-student
     if request.method == "POST":
         nombre = request.form["nombre"]
         apellido = request.form["apellido"]
