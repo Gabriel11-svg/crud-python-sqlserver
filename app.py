@@ -100,6 +100,7 @@ def editar(id):
 # ------------------------------------------
 @app.route("/eliminar/<int:id>", methods=["POST"])
 def eliminar(id):
+    # Cambio para habilitar PR en feature/delete-student
     conn = conectar_db()
     cursor = conn.cursor()
     cursor.execute("DELETE FROM Estudiantes WHERE id=?", (id,))
