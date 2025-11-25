@@ -71,6 +71,7 @@ def crear():
 # ------------------------------------------
 @app.route("/editar/<int:id>", methods=["GET", "POST"])
 def editar(id):
+     # Cambio para habilitar PR en feature/edit-student
     conn = conectar_db()
     cursor = conn.cursor()
 
