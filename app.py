@@ -111,3 +111,4 @@ def eliminar(id):
 if __name__ == "__main__":
     inicializar_db()   # crea la tabla si no existe
     app.run(debug=True)
+# Cambio pequeño para habilitar PR desde feature/db-model
